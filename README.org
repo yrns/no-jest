@@ -1,0 +1,6 @@
+* no-jest
+Right now you can't debug jest tests with =node --inspect...=. This allows debugging of jest tests like so:
+
+=node --inspect --debug-brk -r no-jest -r babel-register test.js=
+
+Note this is an empty proxy that does nothing. Tests won't function but you can debug them. [[https://github.com/jaridmargolin/inspect-process][inspect-process]] is also useful.
